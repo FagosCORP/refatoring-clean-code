@@ -9,10 +9,10 @@ class Payment
     #[GreaterThan(0), LowerThan(13)]
     protected int $installments;
 
-
+    #[GreaterThan(0)]
     protected float $amount;
 
-    #[GreaterThan(0)]
+    
     public function __construct()
     {
     }
